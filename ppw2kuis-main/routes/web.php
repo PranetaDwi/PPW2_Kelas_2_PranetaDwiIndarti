@@ -5,6 +5,6 @@ use App\Http\Controllers\PostController;
 
 
 //route resource
-Route::resource('/',PostController::class);
+Route::resource('/post',PostController::class);
 
 

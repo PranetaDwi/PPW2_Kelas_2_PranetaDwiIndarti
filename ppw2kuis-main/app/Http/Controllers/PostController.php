@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Post;
 
 use Illuminate\Http\Request;
@@ -157,7 +158,7 @@ class PostController extends Controller
      * @param  mixed $post
      * @return void
      */
-    public function destroy($post): RedirectResponse
+    public function destroy(Request $post): RedirectResponse
     {
         //get post by ID
         $post = Post::findOrFail();
